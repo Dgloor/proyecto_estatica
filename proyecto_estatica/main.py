@@ -1,4 +1,4 @@
-from utils.menu import dic_menu
+from utils.menu_builder import menu
 from calculo_resultante.main import menu as resultante_menu
 from calculo_momento.main import menu as momento_menu
 
@@ -6,7 +6,7 @@ from calculo_momento.main import menu as momento_menu
 def init():
     op = 0
     while op != '3':
-        op = dic_menu[0]()
+        op = menu()
 
         if op == '1':
             resultante_menu()

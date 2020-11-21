@@ -7,7 +7,10 @@ class Vectores:
     def __init__(self):
         self.vectores = []
 
-    def addVector(self, vector: Vector):
+    def __len__(self):
+        return len(self.vectores)
+
+    def add_vector(self, vector: Vector):
         self.vectores.append(vector)
 
     def vector_resultante(self):

@@ -1,4 +1,5 @@
-from utils.menu import dic_menu
+from calculo_resultante.inputs import menu0
+
 
 def menu():
-    pass
+    menu0()

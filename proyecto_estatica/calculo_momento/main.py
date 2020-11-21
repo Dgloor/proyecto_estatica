@@ -1,4 +1,4 @@
-from calculo_resultante.inputs import menu0
+from calculo_momento.options import menu0
 
 
 def menu():

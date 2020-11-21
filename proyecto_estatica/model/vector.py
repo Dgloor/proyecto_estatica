@@ -1,12 +1,7 @@
 from dataclasses import dataclass
-import math
+from model.punto import Punto
 
-
-@dataclass
-class Punto:
-    x: float
-    y: float
-    z: float
+from math import cos
 
 
 @dataclass
@@ -21,9 +16,9 @@ class Vector:
                             gamma: float):
         return cls(
             Punto(
-                magnitud * math.cos(alfa),
-                magnitud * math.cos(beta),
-                magnitud * math.cos(gamma)
+                magnitud * cos(alfa),
+                magnitud * cos(beta),
+                magnitud * cos(gamma)
             )
         )
 
@@ -31,12 +26,12 @@ class Vector:
     def from_vector_cartesiano(cls, Vector):
         return cls(Vector)
 
-    # @classmethod
-    # def from_magnitud_direccion(cls,
-    #                             magnitud: float,
-    #                             p1: Punto,
-    #                             p2: Punto):
-    #     pass
+    @classmethod
+    def from_magnitud_direccion(cls,
+                                magnitud: float,
+                                p1: Punto,
+                                p2: Punto):
+        pass
 
     def __str__(self):
         return f'Vector({round(self.fuerza.x, 2)}i' \

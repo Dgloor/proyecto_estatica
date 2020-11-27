@@ -4,10 +4,10 @@ from model.vector import Vector
 
 
 def get_vector_a():
-    magnitud = input("Ingrese magnitud: ")
-    cos1 = input("Ingrese coseno director 1: ")
-    cos2 = input("Ingrese coseno director 2: ")
-    cos3 = input("Ingrese coseno director 3: ")
+    magnitud:float = float(input("Ingrese magnitud: "))
+    cos2: int = int(input("Ingrese coseno director 2: "))
+    cos3: int = int(input("Ingrese coseno director 3: "))
+    cos1: int = int(input("Ingrese coseno director 1: "))
     return None
 
 
@@ -17,7 +17,7 @@ def get_vector_b():
 
 
 def get_vector_c():
-    magnitud = input("Ingrese magnitud: ")
+    magnitud: float = float(input("Ingrese magnitud: "))
     return None
 
 

@@ -1,4 +1,4 @@
-def menu_builder(n_opciones, text):
+def menu_builder(n_opciones: int, text: str):
     def menu():
         print(text)
         op_validas = [str(i + 1) for i in range(n_opciones)]
@@ -14,7 +14,7 @@ def menu_builder(n_opciones, text):
     return menu
 
 
-def menu_v_builder(n_opciones, text, j):
+def menu_v_builder(n_opciones: int, text: str, j):
     def menu():
         print(text)
         op_validas = [str(i + 1) for i in range(n_opciones)]

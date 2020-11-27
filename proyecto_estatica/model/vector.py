@@ -10,10 +10,10 @@ class Vector:
 
     @classmethod
     def from_magnitud_cosenos(cls,
-                            magnitud: float,
-                            alfa: float,
-                            beta: float,
-                            gamma: float):
+                              magnitud: float,
+                              alfa: float,
+                              beta: float,
+                              gamma: float):
         return cls(
             Punto(
                 magnitud * cos(alfa),
